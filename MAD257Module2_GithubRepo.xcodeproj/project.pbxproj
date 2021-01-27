@@ -13,6 +13,10 @@
 		3A42A73425C1046E00E93EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A42A73225C1046E00E93EFA /* Main.storyboard */; };
 		3A42A73625C1047100E93EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A42A73525C1047100E93EFA /* Assets.xcassets */; };
 		3A42A73925C1047100E93EFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A42A73725C1047100E93EFA /* LaunchScreen.storyboard */; };
+		3A42A74125C1052E00E93EFA /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A42A74025C1052D00E93EFA /* confetti.png */; };
+		3A42A74325C1053700E93EFA /* thankYou.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A42A74225C1053700E93EFA /* thankYou.png */; };
+		3A42A74525C1054100E93EFA /* lostFoundPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A42A74425C1054100E93EFA /* lostFoundPhone.png */; };
+		3A42A74725C1080200E93EFA /* DisplayMsgVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A42A74625C1080200E93EFA /* DisplayMsgVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		3A42A73525C1047100E93EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A42A73825C1047100E93EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A42A73A25C1047100E93EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A42A74025C1052D00E93EFA /* confetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confetti.png; sourceTree = SOURCE_ROOT; };
+		3A42A74225C1053700E93EFA /* thankYou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thankYou.png; sourceTree = SOURCE_ROOT; };
+		3A42A74425C1054100E93EFA /* lostFoundPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lostFoundPhone.png; sourceTree = SOURCE_ROOT; };
+		3A42A74625C1080200E93EFA /* DisplayMsgVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayMsgVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +67,12 @@
 				3A42A72C25C1046E00E93EFA /* AppDelegate.swift */,
 				3A42A72E25C1046E00E93EFA /* SceneDelegate.swift */,
 				3A42A73025C1046E00E93EFA /* ViewController.swift */,
+				3A42A74625C1080200E93EFA /* DisplayMsgVC.swift */,
 				3A42A73225C1046E00E93EFA /* Main.storyboard */,
 				3A42A73525C1047100E93EFA /* Assets.xcassets */,
+				3A42A74025C1052D00E93EFA /* confetti.png */,
+				3A42A74225C1053700E93EFA /* thankYou.png */,
+				3A42A74425C1054100E93EFA /* lostFoundPhone.png */,
 				3A42A73725C1047100E93EFA /* LaunchScreen.storyboard */,
 				3A42A73A25C1047100E93EFA /* Info.plist */,
 			);
@@ -126,8 +138,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A42A73925C1047100E93EFA /* LaunchScreen.storyboard in Resources */,
+				3A42A74325C1053700E93EFA /* thankYou.png in Resources */,
 				3A42A73625C1047100E93EFA /* Assets.xcassets in Resources */,
+				3A42A74525C1054100E93EFA /* lostFoundPhone.png in Resources */,
 				3A42A73425C1046E00E93EFA /* Main.storyboard in Resources */,
+				3A42A74125C1052E00E93EFA /* confetti.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +156,7 @@
 				3A42A73125C1046E00E93EFA /* ViewController.swift in Sources */,
 				3A42A72D25C1046E00E93EFA /* AppDelegate.swift in Sources */,
 				3A42A72F25C1046E00E93EFA /* SceneDelegate.swift in Sources */,
+				3A42A74725C1080200E93EFA /* DisplayMsgVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

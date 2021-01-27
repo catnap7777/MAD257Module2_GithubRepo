@@ -1,24 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CMo-US-bTG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--GitHub Repo Demo-->
+        <scene sceneID="zJq-Cu-ZSc">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="Qsr-AE-fFZ" customClass="ViewController" customModule="MAD157Module2LostPhoneKarenM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="61k-cl-zIt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click the button to display owner info for the sad individual that is now panicking about losing his/her electronic bff.  " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bG-c3-lSs">
+                                <rect key="frame" x="51" y="337" width="312" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="SsS-Xi-uof"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MO-kg-lqB">
+                                <rect key="frame" x="73" y="430" width="268" height="32"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="1KR-A6-OcH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="OK"/>
+                                <connections>
+                                    <action selector="touchUpInside:" destination="Qsr-AE-fFZ" eventType="touchUpInside" id="qYy-Ky-1vJ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lostFoundPhone.png" translatesAutoresizingMaskIntoConstraints="NO" id="n81-tC-4oe">
+                                <rect key="frame" x="87" y="201" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="NoU-kt-DqD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3MO-kg-lqB" firstAttribute="top" secondItem="5bG-c3-lSs" secondAttribute="bottom" constant="8" id="01J-Jd-Bfv"/>
+                            <constraint firstItem="n81-tC-4oe" firstAttribute="top" secondItem="zGG-2l-MRh" secondAttribute="top" constant="113" id="IDJ-a8-jiJ"/>
+                            <constraint firstItem="n81-tC-4oe" firstAttribute="centerX" secondItem="5bG-c3-lSs" secondAttribute="centerX" id="cxz-MQ-aa3"/>
+                            <constraint firstItem="n81-tC-4oe" firstAttribute="centerX" secondItem="61k-cl-zIt" secondAttribute="centerX" id="eqf-28-5qh"/>
+                            <constraint firstItem="3MO-kg-lqB" firstAttribute="leading" secondItem="zGG-2l-MRh" secondAttribute="leading" constant="73" id="hK1-M8-CIG"/>
+                            <constraint firstItem="5bG-c3-lSs" firstAttribute="top" secondItem="n81-tC-4oe" secondAttribute="bottom" constant="8" id="mcu-JA-ZhT"/>
+                            <constraint firstItem="n81-tC-4oe" firstAttribute="leading" secondItem="zGG-2l-MRh" secondAttribute="leading" constant="87" id="uFB-xT-hbr"/>
+                            <constraint firstItem="5bG-c3-lSs" firstAttribute="leading" secondItem="zGG-2l-MRh" secondAttribute="leading" constant="51" id="uxT-VM-Laa"/>
+                            <constraint firstItem="5bG-c3-lSs" firstAttribute="centerX" secondItem="3MO-kg-lqB" secondAttribute="centerX" id="yE1-1H-7zB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zGG-2l-MRh"/>
                     </view>
+                    <navigationItem key="navigationItem" title="GitHub Repo Demo" id="1OA-fg-mkF"/>
+                    <connections>
+                        <outlet property="buttonObject" destination="3MO-kg-lqB" id="99v-EN-wtW"/>
+                        <outlet property="instructionLabel" destination="5bG-c3-lSs" id="vxa-qo-DTU"/>
+                        <outlet property="thankYouImage" destination="n81-tC-4oe" id="2h6-aP-7mO"/>
+                        <segue destination="vUI-Kl-LcD" kind="show" identifier="displayMsgSegue" id="Ylv-wf-aEL"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D7Q-Ac-Gzc" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="918.84057971014499" y="76.339285714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0G1-V2-DtJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CMo-US-bTG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mbQ-KA-aBa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.08489882319" green="0.91957763920000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Qsr-AE-fFZ" kind="relationship" relationship="rootViewController" id="IEV-Le-oTA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qdb-15-XaM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.6956521739130448" y="76.339285714285708"/>
+        </scene>
+        <!--GitHub Repo Demo-->
+        <scene sceneID="lWA-nd-bIx">
+            <objects>
+                <viewController id="vUI-Kl-LcD" customClass="DisplayMsgVC" customModule="MAD257Module2_GithubRepo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bK9-cA-NPI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click the button to display owner info for the sad individual that is now panicking about losing his/her electronic bff.  " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uK-tu-8NC">
+                                <rect key="frame" x="51" y="337" width="312" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="0sD-hM-z0c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vz-RK-SC9">
+                                <rect key="frame" x="73" y="430" width="268" height="32"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="4dZ-Mq-ReC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="OK"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lostFoundPhone.png" translatesAutoresizingMaskIntoConstraints="NO" id="0xc-Oh-gM5">
+                                <rect key="frame" x="87" y="201" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="OyL-vu-M6H"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Yt-XE-dJe">
+                                <rect key="frame" x="30" y="498" width="354" height="295"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4uK-tu-8NC" firstAttribute="centerX" secondItem="5vz-RK-SC9" secondAttribute="centerX" id="5oc-gn-isx"/>
+                            <constraint firstItem="EHh-BP-5dK" firstAttribute="bottom" secondItem="8Yt-XE-dJe" secondAttribute="bottom" constant="69" id="FD4-VU-KTc"/>
+                            <constraint firstItem="8Yt-XE-dJe" firstAttribute="leading" secondItem="EHh-BP-5dK" secondAttribute="leading" constant="30" id="H0c-jO-FLY"/>
+                            <constraint firstItem="4uK-tu-8NC" firstAttribute="leading" secondItem="EHh-BP-5dK" secondAttribute="leading" constant="51" id="KOF-3E-GH7"/>
+                            <constraint firstItem="8Yt-XE-dJe" firstAttribute="top" secondItem="5vz-RK-SC9" secondAttribute="bottom" constant="36" id="Nb3-De-aM1"/>
+                            <constraint firstItem="5vz-RK-SC9" firstAttribute="leading" secondItem="EHh-BP-5dK" secondAttribute="leading" constant="73" id="P5w-rM-oxo"/>
+                            <constraint firstItem="0xc-Oh-gM5" firstAttribute="leading" secondItem="EHh-BP-5dK" secondAttribute="leading" constant="87" id="dbN-Ve-k3Q"/>
+                            <constraint firstItem="5vz-RK-SC9" firstAttribute="top" secondItem="4uK-tu-8NC" secondAttribute="bottom" constant="8" id="fC3-8A-bX5"/>
+                            <constraint firstItem="0xc-Oh-gM5" firstAttribute="centerX" secondItem="bK9-cA-NPI" secondAttribute="centerX" id="iFx-jM-JMq"/>
+                            <constraint firstItem="4uK-tu-8NC" firstAttribute="top" secondItem="0xc-Oh-gM5" secondAttribute="bottom" constant="8" id="mtJ-Ab-uTb"/>
+                            <constraint firstItem="5vz-RK-SC9" firstAttribute="centerX" secondItem="8Yt-XE-dJe" secondAttribute="centerX" id="pfb-Gl-0mR"/>
+                            <constraint firstItem="0xc-Oh-gM5" firstAttribute="centerX" secondItem="4uK-tu-8NC" secondAttribute="centerX" id="rmp-LC-0gi"/>
+                            <constraint firstItem="0xc-Oh-gM5" firstAttribute="top" secondItem="EHh-BP-5dK" secondAttribute="top" constant="113" id="xfI-GF-vfu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EHh-BP-5dK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="GitHub Repo Demo" id="u8h-5g-tUN"/>
+                    <connections>
+                        <outlet property="buttonObject" destination="5vz-RK-SC9" id="CoG-ZE-8KF"/>
+                        <outlet property="displayText" destination="8Yt-XE-dJe" id="HTd-iD-UBw"/>
+                        <outlet property="instructionLabel" destination="4uK-tu-8NC" id="wSX-vY-7Wg"/>
+                        <outlet property="myView" destination="bK9-cA-NPI" id="G1O-Ut-vuv"/>
+                        <outlet property="thankYouImage" destination="0xc-Oh-gM5" id="oLs-Ju-YkW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N7f-U7-q1b" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1826" y="76"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lostFoundPhone.png" width="472" height="392"/>
+    </resources>
 </document>
