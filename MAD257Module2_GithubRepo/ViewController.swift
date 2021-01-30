@@ -9,7 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     
     @IBOutlet var thankYouImage: UIImageView!
     @IBOutlet var buttonObject: UIButton!
@@ -40,7 +39,6 @@ class ViewController: UIViewController {
      
         }
     }
-
 
 }
 
